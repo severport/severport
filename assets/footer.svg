@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 86" width="880" height="86" role="presentation">
+  <defs>
+    <linearGradient id="fw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4C7591" stop-opacity="0"/>
+      <stop offset="0.15" stop-color="#4C7591" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#6E9AB4" stop-opacity="0.8"/>
+      <stop offset="0.85" stop-color="#4C7591" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#4C7591" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fw2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A5A73" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#3A5A73" stop-opacity="0.4"/>
+      <stop offset="0.8" stop-color="#3A5A73" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#3A5A73" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <path d="M0 44 C 80 34, 150 54, 230 44 S 380 34, 460 44 S 610 54, 690 44 S 820 34, 880 44"
+        fill="none" stroke="url(#fw)" stroke-width="1.4"/>
+  <path d="M0 58 C 90 50, 160 66, 250 58 S 400 50, 480 58 S 630 66, 720 58 S 830 50, 880 58"
+        fill="none" stroke="url(#fw2)" stroke-width="1.2"/>
+  <circle cx="230" cy="44" r="6" fill="#FFD9A0" opacity="0.28" filter="url(#glow)"/>
+  <circle cx="230" cy="44" r="2.2" fill="#FFE9C8" opacity="0.95"/>
+</svg>

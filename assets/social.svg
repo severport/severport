@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-labelledby="ogT ogD">
+  <title id="ogT">A quiet light for loud systems</title>
+  <desc id="ogD">Night coast, lighthouse beam over dark water. Anonymous profile.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#02050A"/>
+      <stop offset="0.55" stop-color="#060D19"/>
+      <stop offset="1" stop-color="#0A1524"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(1010 355) scale(290 265)">
+      <stop offset="0" stop-color="#FFE3B0" stop-opacity="0.40"/>
+      <stop offset="0.30" stop-color="#7FC9DF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#7FC9DF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="beamA" x1="1010" y1="355" x2="90" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EAF9FF" stop-opacity="0.28"/>
+      <stop offset="0.32" stop-color="#D2EFF9" stop-opacity="0.14"/>
+      <stop offset="0.78" stop-color="#D2EFF9" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#D2EFF9" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="beamB" x1="1010" y1="355" x2="1280" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE7C2" stop-opacity="0.20"/>
+      <stop offset="0.6" stop-color="#FFD79A" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFD79A" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="towerFill" x1="976" y1="0" x2="1044" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F1B2C"/>
+      <stop offset="0.5" stop-color="#080D16"/>
+      <stop offset="1" stop-color="#03060A"/>
+    </linearGradient>
+
+    <linearGradient id="rimLeft" x1="0" y1="380" x2="0" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A8D6EA" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#5C8DA8" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#5C8DA8" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="sea" x1="0" y1="560" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#091422"/>
+      <stop offset="1" stop-color="#03070C"/>
+    </linearGradient>
+
+    <linearGradient id="mist" x1="0" y1="500" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#13253B" stop-opacity="0"/>
+      <stop offset="1" stop-color="#13253B" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <radialGradient id="vignette" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(640 320) scale(880 430)">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.5"/>
+    </radialGradient>
+
+    <filter id="bxs" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="bs" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="bbeam" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="bbeamxl" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="34"/></filter>
+    <filter id="bm" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="24"/></filter>
+    <filter id="bloom" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.86" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+
+    <clipPath id="towerClip">
+      <path d="M992 380 L1028 380 L1036 566 L984 566 Z"/>
+    </clipPath>
+
+    <style>
+      .beamA, .beamB { transform-box: view-box; transform-origin: 1010px 355px; }
+      .beamA { animation: sweepA 26s ease-in-out infinite; }
+      .beamB { animation: sweepB 26s ease-in-out infinite; }
+      .lamp { animation: flicker 9s ease-in-out infinite; }
+      @keyframes sweepA { 0%,100% { transform: rotate(0deg);} 50% { transform: rotate(-2.6deg);} }
+      @keyframes sweepB { 0%,100% { transform: rotate(0deg);} 50% { transform: rotate(-1.8deg);} }
+      @keyframes flicker { 0%,100% { opacity: .88; } 42% { opacity: 1; } 68% { opacity: .92; } }
+      @media (prefers-reduced-motion: reduce) { .beamA,.beamB,.lamp { animation: none; } }
+      .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+      .serif { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#sky)"/>
+
+  <g fill="#CFE3F5">
+    <circle cx="70"  cy="70"  r="1.2" opacity="0.26"/>
+    <circle cx="190" cy="40"  r="0.9" opacity="0.18"/>
+    <circle cx="300" cy="96"  r="1.0" opacity="0.20"/>
+    <circle cx="392" cy="44"  r="1.2" opacity="0.24"/>
+    <circle cx="490" cy="120" r="0.8" opacity="0.12"/>
+    <circle cx="580" cy="40"  r="1.1" opacity="0.24"/>
+    <circle cx="668" cy="86"  r="0.8" opacity="0.14"/>
+    <circle cx="742" cy="34"  r="1.2" opacity="0.22"/>
+    <circle cx="836" cy="110" r="0.7" opacity="0.10"/>
+    <circle cx="900" cy="46"  r="1.0" opacity="0.20"/>
+    <circle cx="1108" cy="60" r="1.1" opacity="0.22"/>
+    <circle cx="1176" cy="130" r="0.8" opacity="0.14"/>
+    <circle cx="1234" cy="46" r="1.2" opacity="0.24"/>
+    <circle cx="140" cy="190" r="0.7" opacity="0.09"/>
+    <circle cx="256" cy="240" r="0.7" opacity="0.08"/>
+  </g>
+
+  <ellipse cx="1010" cy="355" rx="290" ry="265" fill="url(#halo)"/>
+
+  <g transform="translate(1010 560) scale(1.16) translate(-1010 -560)">
+  <g class="beamA">
+    <polygon points="1010,355 20,-420 20,120" fill="url(#beamA)" opacity="0.18" filter="url(#bbeamxl)"/>
+    <polygon points="1010,355 60,-250 60,-40" fill="url(#beamA)" opacity="0.45" filter="url(#bbeam)"/>
+    <polygon points="1010,355 440,-120 440,-50" fill="url(#beamA)" opacity="0.40" filter="url(#bs)"/>
+  </g>
+  <g class="beamB" opacity="0.85" filter="url(#bbeam)">
+    <polygon points="1010,355 1280,180 1280,250" fill="url(#beamB)"/>
+  </g>
+  </g>
+
+  <rect x="0" y="560" width="1280" height="80" fill="url(#sea)"/>
+  <line x1="0" y1="560" x2="1280" y2="560" stroke="#20364F" stroke-opacity="0.55"/>
+
+  <ellipse cx="520" cy="552" rx="560" ry="26" fill="#1B3049" opacity="0.22" filter="url(#bm)"/>
+  <ellipse cx="1140" cy="538" rx="300" ry="20" fill="#1B3049" opacity="0.20" filter="url(#bm)"/>
+
+  <g transform="translate(1010 560) scale(1.16) translate(-1010 -560)" stroke="#FFC98A" stroke-linecap="round" filter="url(#bxs)">
+    <line x1="988" y1="568" x2="1032" y2="568" stroke-width="3.4" opacity="0.45"/>
+    <line x1="982" y1="578" x2="1038" y2="578" stroke-width="2.6" opacity="0.30"/>
+    <line x1="992" y1="590" x2="1028" y2="590" stroke-width="2.2" opacity="0.24"/>
+    <line x1="984" y1="604" x2="1036" y2="604" stroke-width="1.8" opacity="0.17"/>
+    <line x1="994" y1="618" x2="1026" y2="618" stroke-width="1.5" opacity="0.12"/>
+  </g>
+
+  <g stroke="#8FC4D8" stroke-linecap="round" opacity="0.16">
+    <line x1="900" y1="574" x2="960" y2="574" stroke-width="1.2"/>
+    <line x1="1060" y1="580" x2="1140" y2="580" stroke-width="1.2"/>
+    <line x1="840" y1="592" x2="920" y2="592" stroke-width="1.2"/>
+    <line x1="1080" y1="600" x2="1180" y2="600" stroke-width="1.2"/>
+    <line x1="780" y1="614" x2="860" y2="614" stroke-width="1.2"/>
+    <line x1="1100" y1="626" x2="1230" y2="626" stroke-width="1.2"/>
+    <line x1="140" y1="582" x2="230" y2="582" stroke-width="1.2" opacity="0.5"/>
+    <line x1="360" y1="600" x2="450" y2="600" stroke-width="1.2" opacity="0.45"/>
+  </g>
+
+  <g transform="translate(1010 560) scale(1.16) translate(-1010 -560)">
+    <path d="M992 380 L1028 380 L1036 566 L984 566 Z" fill="url(#towerFill)"/>
+    <g clip-path="url(#towerClip)">
+      <rect x="970" y="436" width="80" height="14" fill="#0C1828" opacity="0.85"/>
+      <rect x="970" y="492" width="80" height="14" fill="#0C1828" opacity="0.85"/>
+      <rect x="970" y="540" width="80" height="16" fill="#0A131F" opacity="0.9"/>
+      <rect x="970" y="380" width="80" height="16" fill="#C9A177" opacity="0.09"/>
+    </g>
+
+    <path d="M992 380 L984 566" stroke="url(#rimLeft)" stroke-width="1.6" fill="none"/>
+    <path d="M1028 380 L1036 566" stroke="#1B3049" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
+
+    <g fill="#16283D">
+      <rect x="1004" y="412" width="10" height="15" rx="5"/>
+      <rect x="1004" y="468" width="10" height="15" rx="5"/>
+      <rect x="1004" y="520" width="10" height="15" rx="5"/>
+    </g>
+
+    <circle cx="1010" cy="355" r="30" fill="#FFE9C8" opacity="0.07" filter="url(#bloom)"/>
+
+    <rect x="988" y="370" width="44" height="11" rx="2" fill="#060A11"/>
+    <rect x="988" y="370" width="44" height="11" rx="2" fill="none" stroke="#2A4763" stroke-opacity="0.6"/>
+    <g stroke="#24405A" stroke-opacity="0.7">
+      <line x1="992" y1="360" x2="992" y2="370"/>
+      <line x1="1000" y1="360" x2="1000" y2="370"/>
+      <line x1="1010" y1="360" x2="1010" y2="370"/>
+      <line x1="1020" y1="360" x2="1020" y2="370"/>
+      <line x1="1028" y1="360" x2="1028" y2="370"/>
+    </g>
+    <line x1="988" y1="360" x2="1032" y2="360" stroke="#24405A" stroke-opacity="0.75" stroke-width="1.2"/>
+
+    <rect x="996" y="331" width="28" height="29" rx="1.4" fill="#050A12"/>
+    <rect x="996" y="331" width="28" height="29" rx="1.4" fill="none" stroke="#33536F" stroke-opacity="0.7" stroke-width="1.1"/>
+    <line x1="1010" y1="331" x2="1010" y2="360" stroke="#33536F" stroke-opacity="0.35"/>
+    <line x1="996" y1="346" x2="1024" y2="346" stroke="#33536F" stroke-opacity="0.3"/>
+
+    <circle class="lamp" cx="1010" cy="355" r="5.4" fill="#FFF3DA"/>
+    <circle cx="1010" cy="355" r="13" fill="#FFD9A0" opacity="0.35" filter="url(#bs)"/>
+
+    <path d="M996 331 Q1010 307 1024 331 Z" fill="#050A12"/>
+    <path d="M996 331 Q1010 307 1024 331" fill="none" stroke="#33536F" stroke-opacity="0.55" stroke-width="1.1"/>
+    <line x1="1010" y1="307" x2="1010" y2="296" stroke="#33536F" stroke-opacity="0.55" stroke-width="1.2"/>
+    <circle cx="1010" cy="294" r="1.8" fill="#7FA8C2" opacity="0.55"/>
+  </g>
+
+  <ellipse transform="translate(1010 560) scale(1.16) translate(-1010 -560)" cx="1010" cy="564" rx="46" ry="4.6" fill="#02050A" opacity="0.75" filter="url(#bs)"/>
+
+  <rect x="0" y="500" width="1280" height="100" fill="url(#mist)"/>
+
+  <g>
+    <text class="mono" x="88" y="252" font-size="13" fill="#7E97B6"><tspan letter-spacing="6.6" fill="#C8DCEF">SEVERPORT</tspan><tspan letter-spacing="4.2" fill="#6C86A6">   ·   SOMEWHERE ON THE COAST</tspan></text>
+    <text class="serif" x="88" y="336" font-size="66" fill="#EDF3FB">A quiet light</text>
+    <text class="serif" x="88" y="406" font-size="66" fill="#EDF3FB">for loud systems.</text>
+    <line x1="88" y1="448" x2="228" y2="448" stroke="#2C4159" stroke-width="1.2"/>
+    <text class="mono" x="88" y="488" font-size="15" letter-spacing="3.4" fill="#94ACC6">LOCAL-FIRST · ML/CV · PRODUCT</text>
+  </g>
+
+  <rect width="1280" height="640" fill="url(#vignette)"/>
+  <rect width="1280" height="640" filter="url(#grain)" opacity="0.035" style="mix-blend-mode:overlay"/>
+</svg>

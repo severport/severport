@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">A quiet light for loud systems</title>
+  <desc id="heroDesc">A dark night coast, a lighthouse casting a pale beam over water. Anonymous profile banner.</desc>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#03060B"/>
+      <stop offset="0.55" stop-color="#070F1C"/>
+      <stop offset="1" stop-color="#0A1524"/>
+    </linearGradient>
+
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(720 158) scale(200 175)">
+      <stop offset="0" stop-color="#FFE3B0" stop-opacity="0.40"/>
+      <stop offset="0.30" stop-color="#7FC9DF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#7FC9DF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="beamA" x1="720" y1="158" x2="60" y2="-40" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EAF9FF" stop-opacity="0.30"/>
+      <stop offset="0.30" stop-color="#D2EFF9" stop-opacity="0.16"/>
+      <stop offset="0.75" stop-color="#D2EFF9" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#D2EFF9" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="beamSoft" x1="720" y1="158" x2="240" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0FBFF" stop-opacity="0.34"/>
+      <stop offset="0.35" stop-color="#D2EFF9" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#D2EFF9" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="beamB" x1="720" y1="158" x2="880" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE7C2" stop-opacity="0.20"/>
+      <stop offset="0.6" stop-color="#FFD79A" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#FFD79A" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="towerFill" x1="703" y1="0" x2="737" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F1B2C"/>
+      <stop offset="0.5" stop-color="#080D16"/>
+      <stop offset="1" stop-color="#03060A"/>
+    </linearGradient>
+
+    <linearGradient id="rimLeft" x1="0" y1="176" x2="0" y2="304" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A8D6EA" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#5C8DA8" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#5C8DA8" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="sea" x1="0" y1="302" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#091422"/>
+      <stop offset="1" stop-color="#04080E"/>
+    </linearGradient>
+
+    <linearGradient id="mist" x1="0" y1="272" x2="0" y2="322" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#13253B" stop-opacity="0"/>
+      <stop offset="1" stop-color="#13253B" stop-opacity="0.42"/>
+    </linearGradient>
+
+    <radialGradient id="vignette" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(440 170) scale(620 300)">
+      <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0.62" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+
+    <filter id="blurXS" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.4"/>
+    </filter>
+    <filter id="blurS" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="blurBeam" x="-40%" y="-60%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+    <filter id="blurBeamXL" x="-40%" y="-60%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="blurM" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+
+    <clipPath id="card">
+      <rect width="880" height="340" rx="18"/>
+    </clipPath>
+
+    <clipPath id="towerClip">
+      <path d="M709 178 L731 178 L737 306 L703 306 Z"/>
+    </clipPath>
+
+    <style>
+      .beamA, .beamB { transform-box: view-box; transform-origin: 720px 158px; }
+      .beamA { animation: sweepA 26s ease-in-out infinite; }
+      .beamB { animation: sweepB 26s ease-in-out infinite; }
+      .lamp  { animation: flicker 9s ease-in-out infinite; }
+      @keyframes sweepA {
+        0%, 100% { transform: rotate(0deg); }
+        50%      { transform: rotate(-2.6deg); }
+      }
+      @keyframes sweepB {
+        0%, 100% { transform: rotate(0deg); }
+        50%      { transform: rotate(-1.8deg); }
+      }
+      @keyframes flicker {
+        0%, 100% { opacity: 0.88; }
+        42%      { opacity: 1; }
+        68%      { opacity: 0.92; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .beamA, .beamB, .lamp { animation: none; }
+      }
+      .mono  { font-family: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+      .serif { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="880" height="340" fill="url(#sky)"/>
+
+    <!-- stars -->
+    <g fill="#CFE3F5">
+      <circle cx="48"  cy="38"  r="0.8" opacity="0.26"/>
+      <circle cx="132" cy="22"  r="0.6" opacity="0.16"/>
+      <circle cx="205" cy="64"  r="0.7" opacity="0.20"/>
+      <circle cx="268" cy="30"  r="0.9" opacity="0.24"/>
+      <circle cx="331" cy="86"  r="0.5" opacity="0.12"/>
+      <circle cx="392" cy="26"  r="0.8" opacity="0.22"/>
+      <circle cx="455" cy="58"  r="0.6" opacity="0.14"/>
+      <circle cx="512" cy="34"  r="0.9" opacity="0.22"/>
+      <circle cx="566" cy="76"  r="0.5" opacity="0.10"/>
+      <circle cx="612" cy="20"  r="0.7" opacity="0.18"/>
+      <circle cx="762" cy="34"  r="0.8" opacity="0.20"/>
+      <circle cx="798" cy="70"  r="0.6" opacity="0.14"/>
+      <circle cx="846" cy="26"  r="0.9" opacity="0.22"/>
+      <circle cx="88"  cy="108" r="0.5" opacity="0.09"/>
+      <circle cx="176" cy="132" r="0.6" opacity="0.08"/>
+      <circle cx="626" cy="112" r="0.5" opacity="0.09"/>
+    </g>
+
+    <!-- halo -->
+    <ellipse cx="720" cy="158" rx="195" ry="170" fill="url(#halo)"/>
+
+    <!-- beams: wide glow, defined cone, bright inner core -->
+    <g class="beamA" opacity="0.9">
+      <polygon points="720,158 60,-190 60,20" fill="url(#beamSoft)" opacity="0.45" filter="url(#blurBeamXL)"/>
+      <polygon points="720,158 60,-120 60,-40" fill="url(#beamSoft)" opacity="0.75" filter="url(#blurBeam)"/>
+    </g>
+    <g class="beamB" opacity="0.85" filter="url(#blurBeam)">
+      <polygon points="720,158 880,96 880,122" fill="url(#beamB)"/>
+    </g>
+
+    <!-- distant light on the horizon -->
+    <circle cx="500" cy="299" r="7" fill="#FFD79A" opacity="0.10" filter="url(#blurS)"/>
+    <circle cx="500" cy="299" r="1.1" fill="#FFE6BE" opacity="0.55"/>
+
+    <!-- sea -->
+    <rect x="0" y="302" width="880" height="38" fill="url(#sea)"/>
+    <line x1="0" y1="302" x2="880" y2="302" stroke="#20364F" stroke-opacity="0.55" stroke-width="1"/>
+
+    <!-- far fog -->
+    <ellipse cx="360" cy="298" rx="420" ry="18" fill="#1B3049" opacity="0.22" filter="url(#blurM)"/>
+    <ellipse cx="800" cy="290" rx="210" ry="13" fill="#1B3049" opacity="0.20" filter="url(#blurM)"/>
+
+    <!-- reflection on water -->
+    <g stroke="#FFC98A" stroke-linecap="round" filter="url(#blurXS)">
+      <line x1="704" y1="307" x2="736" y2="307" stroke-width="2.6" opacity="0.45"/>
+      <line x1="700" y1="311" x2="740" y2="311" stroke-width="2.0" opacity="0.30"/>
+      <line x1="707" y1="316" x2="733" y2="316" stroke-width="1.6" opacity="0.24"/>
+      <line x1="702" y1="321" x2="738" y2="321" stroke-width="1.4" opacity="0.18"/>
+      <line x1="709" y1="327" x2="731" y2="327" stroke-width="1.2" opacity="0.13"/>
+      <line x1="704" y1="333" x2="736" y2="333" stroke-width="1.0" opacity="0.09"/>
+    </g>
+
+    <!-- ripples -->
+    <g stroke="#8FC4D8" stroke-linecap="round" opacity="0.16">
+      <line x1="668" y1="310" x2="690" y2="310" stroke-width="1"/>
+      <line x1="750" y1="312" x2="784" y2="312" stroke-width="1"/>
+      <line x1="620" y1="318" x2="668" y2="318" stroke-width="1"/>
+      <line x1="746" y1="322" x2="806" y2="322" stroke-width="1"/>
+      <line x1="580" y1="328" x2="630" y2="328" stroke-width="1"/>
+      <line x1="722" y1="332" x2="812" y2="332" stroke-width="1"/>
+      <line x1="120" y1="314" x2="176" y2="314" stroke-width="1" opacity="0.5"/>
+      <line x1="300" y1="324" x2="356" y2="324" stroke-width="1" opacity="0.45"/>
+      <line x1="820" y1="316" x2="866" y2="316" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- lighthouse -->
+    <g>
+      <path d="M709 178 L731 178 L737 306 L703 306 Z" fill="url(#towerFill)"/>
+
+      <g clip-path="url(#towerClip)">
+        <rect x="695" y="210" width="50" height="9"  fill="#0C1828" opacity="0.85"/>
+        <rect x="695" y="246" width="50" height="9"  fill="#0C1828" opacity="0.85"/>
+        <rect x="695" y="278" width="50" height="10" fill="#0A131F" opacity="0.9"/>
+        <rect x="695" y="178" width="50" height="12" fill="#C9A177" opacity="0.09"/>
+      </g>
+
+      <path d="M709 178 L703 306" stroke="url(#rimLeft)" stroke-width="1.1" fill="none"/>
+      <path d="M731 178 L737 306" stroke="#1B3049" stroke-opacity="0.40" stroke-width="0.9" fill="none"/>
+
+      <g fill="#16283D">
+        <rect x="716.5" y="196" width="7" height="10" rx="3.5"/>
+        <rect x="716.5" y="232" width="7" height="10" rx="3.5"/>
+        <rect x="716.5" y="268" width="7" height="10" rx="3.5"/>
+      </g>
+
+      <!-- gallery -->
+      <rect x="704" y="170" width="32" height="8" rx="1.4" fill="#060A11"/>
+      <rect x="704" y="170" width="32" height="8" rx="1.4" fill="none" stroke="#2A4763" stroke-opacity="0.6" stroke-width="0.8"/>
+      <g stroke="#24405A" stroke-opacity="0.7" stroke-width="0.8">
+        <line x1="707" y1="163" x2="707" y2="170"/>
+        <line x1="713" y1="163" x2="713" y2="170"/>
+        <line x1="720" y1="163" x2="720" y2="170"/>
+        <line x1="727" y1="163" x2="727" y2="170"/>
+        <line x1="733" y1="163" x2="733" y2="170"/>
+      </g>
+      <line x1="704" y1="163" x2="736" y2="163" stroke="#24405A" stroke-opacity="0.75" stroke-width="1"/>
+
+      <!-- lantern -->
+      <rect x="711" y="148" width="18" height="22" rx="1" fill="#050A12"/>
+      <rect x="711" y="148" width="18" height="22" rx="1" fill="none" stroke="#33536F" stroke-opacity="0.7" stroke-width="0.9"/>
+      <line x1="720" y1="148" x2="720" y2="170" stroke="#33536F" stroke-opacity="0.35" stroke-width="0.7"/>
+      <line x1="711" y1="158" x2="729" y2="158" stroke="#33536F" stroke-opacity="0.30" stroke-width="0.7"/>
+
+      <!-- lamp -->
+      <circle class="lamp" cx="720" cy="158" r="3.8" fill="#FFF3DA"/>
+      <circle cx="720" cy="158" r="9" fill="#FFD9A0" opacity="0.45" filter="url(#blurS)"/>
+
+      <!-- dome -->
+      <path d="M711 148 Q720 131 729 148 Z" fill="#050A12"/>
+      <path d="M711 148 Q720 131 729 148" fill="none" stroke="#33536F" stroke-opacity="0.55" stroke-width="0.8"/>
+      <line x1="720" y1="131" x2="720" y2="124" stroke="#33536F" stroke-opacity="0.55" stroke-width="1"/>
+      <circle cx="720" cy="123" r="1.3" fill="#7FA8C2" opacity="0.55"/>
+    </g>
+
+    <!-- waterline shadow -->
+    <ellipse cx="720" cy="305" rx="34" ry="3.4" fill="#02050A" opacity="0.75" filter="url(#blurS)"/>
+
+    <!-- foreground mist -->
+    <rect x="0" y="272" width="880" height="68" fill="url(#mist)"/>
+
+    <!-- text -->
+    <g>
+      <text class="mono" x="56" y="112" font-size="10" letter-spacing="4.2" fill="#7E97B6">SOMEWHERE ON THE COAST</text>
+
+      <text class="serif" x="56" y="170" font-size="41" fill="#EDF3FB">A quiet light</text>
+      <text class="serif" x="56" y="214" font-size="41" fill="#EDF3FB">for loud systems.</text>
+
+      <line x1="56" y1="240" x2="146" y2="240" stroke="#2C4159" stroke-width="1"/>
+      <text class="mono" x="56" y="264" font-size="11" letter-spacing="2.3" fill="#94ACC6">LOCAL-FIRST · ML/CV · PRODUCT</text>
+    </g>
+
+    <rect width="880" height="340" fill="url(#vignette)"/>
+    <rect x="0.5" y="0.5" width="879" height="339" rx="17.5" fill="none" stroke="#182A41" stroke-opacity="0.9"/>
+  </g>
+</svg>

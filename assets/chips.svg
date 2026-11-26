@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 58" width="880" height="58" role="img" aria-label="Stack: Python, PostgreSQL, Docker, ML / CV, RAG, Product">
+  <title>Stack</title>
+  <g>
+    <rect x="0.0" y="8" width="90" height="30" rx="15" fill="#0C1725" stroke="#24354F" stroke-opacity="0.9"/>
+    <text x="45.0" y="27" font-family='ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2"
+          text-anchor="middle" fill="#A9C0D8">PYTHON</text>
+  </g>
+  <g>
+    <rect x="100.0" y="8" width="124" height="30" rx="15" fill="#0C1725" stroke="#24354F" stroke-opacity="0.9"/>
+    <text x="162.0" y="27" font-family='ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2"
+          text-anchor="middle" fill="#A9C0D8">POSTGRESQL</text>
+  </g>
+  <g>
+    <rect x="234.0" y="8" width="90" height="30" rx="15" fill="#0C1725" stroke="#24354F" stroke-opacity="0.9"/>
+    <text x="279.0" y="27" font-family='ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2"
+          text-anchor="middle" fill="#A9C0D8">DOCKER</text>
+  </g>
+  <g>
+    <rect x="334.0" y="8" width="98" height="30" rx="15" fill="#0C1725" stroke="#24354F" stroke-opacity="0.9"/>
+    <text x="383.0" y="27" font-family='ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2"
+          text-anchor="middle" fill="#A9C0D8">ML / CV</text>
+  </g>
+  <g>
+    <rect x="442.0" y="8" width="64" height="30" rx="15" fill="#0C1725" stroke="#24354F" stroke-opacity="0.9"/>
+    <text x="474.0" y="27" font-family='ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2"
+          text-anchor="middle" fill="#A9C0D8">RAG</text>
+  </g>
+  <g>
+    <rect x="516.0" y="8" width="98" height="30" rx="15" fill="#0C1725" stroke="#24354F" stroke-opacity="0.9"/>
+    <text x="565.0" y="27" font-family='ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2"
+          text-anchor="middle" fill="#A9C0D8">PRODUCT</text>
+  </g>
+</svg>
