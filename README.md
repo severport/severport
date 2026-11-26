@@ -1,4 +1,8 @@
-  <p align="center">
+<p align="center">
+  <sub><b>EN</b> &nbsp;·&nbsp; <a href="README.ru.md">RU</a></sub>
+</p>
+
+<p align="center">
   <img src="assets/hero.svg" alt="A quiet light for loud systems — a lighthouse on a dark coast" width="100%">
 </p>
 
@@ -7,11 +11,6 @@
 </p>
 
 ### A stranger, with the light on.
-
-I build small, quiet software — the kind that runs on your own machine, keeps your data there, and never asks you to register.
-
-Most of it lives where product and code overlap: local-first search, computer vision that never leaves the laptop, specs written strict enough to be tests.
-
 This is not a portfolio, not a CV, not a brand. It is a working light, and the few things it happens to illuminate.
 
 <p align="center">
